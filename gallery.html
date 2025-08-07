@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Southern Love Kitchen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo"><a href="index.html">Southern Love <span>Kitchen</span></a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order Online</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery container">
+      <h1>Gallery</h1>
+      <p>
+        Browse our most popular dishes, soulful videos, and behind-the-scenes moments.<br>
+        Follow us on <a href="#">Instagram</a> for the latest food pics and updates!
+      </p>
+      <div class="gallery-grid">
+        <!-- Your uploaded food images -->
+        <img src="B70EE393-E18C-4EDE-9938-BFCB280F814E.jpeg" alt="Mac & Cheese Tray">
+        <img src="B10887C6-E88A-487F-8D56-EE57326ADEAD.jpeg" alt="Turkey Wings Plate">
+        <img src="1DF9B4A1-AFB2-4F71-A9D2-7FC4D48DEC6C.jpeg" alt="Loaded Southern Plate">
+      </div>
+    </section>
+
+    <section class="video-gallery">
+      <h2>Soulful Moments: Watch Us in Action</h2>
+      <div class="video-grid">
+        <div class="video-item">
+          <h3>Big Mama’s Mac & Cheese Pull</h3>
+          <video controls width="100%">
+            <source src="f3fe625a4de24d078c0bcdaf0137040e.mov" type="video/mp4">
+          </video>
+          <p class="caption">Just listen to that cheese stretch. Comfort food at its finest—made with love, baked with soul.</p>
+        </div>
+        <div class="video-item">
+          <h3>Country Gold Turkey Wings</h3>
+          <video controls width="100%">
+            <source src="f8ae8a9f72d74bb3b737b5eadbde8841.mov" type="video/mp4">
+          </video>
+          <p class="caption">Juicy, golden, and dripping with flavor—smothered turkey wings like Grandma made ‘em.</p>
+        </div>
+        <div class="video-item">
+          <h3>Southern Sizzle Platter</h3>
+          <video controls width="100%">
+            <source src="914701ce28934c9686f0feed7a951d1c.mov" type="video/mp4">
+          </video>
+          <p class="caption">Hot out the pan and ready to serve—hear that sizzle, taste the South.</p>
+        </div>
+        <div class="video-item">
+          <h3>Backyard Bayou Shrimp Fry</h3>
+          <video controls width="100%">
+            <source src="7d0a986deb1442b0b1e7554bbac58233.mov" type="video/mp4">
+          </video>
+          <p class="caption">Jumbo shrimp fried up crisp—straight out the bayou and into your heart.</p>
+        </div>
+        <div class="video-item">
+          <h3>Sweet Heat in the Kitchen</h3>
+          <video controls width="100%">
+            <source src="f83e6d4fe4504054b2b396b7b4ed959d.mov" type="video/mp4">
+          </video>
+          <p class="caption">When the sauce hits just right—sweet, spicy, and oh so soulful.</p>
+        </div>
+        <div class="video-item">
+          <h3>Butter & Soul Mash-Up</h3>
+          <video controls width="100%">
+            <source src="8166fdd8b15d4af48f3455cf6ce7dd86.mov" type="video/mp4">
+          </video>
+          <p class="caption">Whipping up buttery mashed potatoes with a side of Southern charm.</p>
+        </div>
+        <div class="video-item">
+          <h3>Sunday Spread: The Classics</h3>
+          <video controls width="100%">
+            <source src="d1d5d027fb2a44a594f421715e277844.mov" type="video/mp4">
+          </video>
+          <p class="caption">A plate piled high with all your favorites. This is what Sundays are made for.</p>
+        </div>
+      </div>
+      <div class="gallery-social">
+        <h3>Want to be featured?</h3>
+        <p>Tag us <strong>@SouthernLoveKitchen</strong> for a chance to see your photos here!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Southern Love Kitchen. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+      object-fit: cover;
+      transition: transform 0.2s;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.04);
+    }
+    .video-gallery {
+      margin-top: 2.5rem;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.2rem;
+    }
+    .video-item h3 { margin: 0.7rem 0 0.3rem 0;}
+    .caption {
+      font-size: 1.08rem;
+      color: #444;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    .gallery-social {
+      text-align: center;
+      margin-top: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+</body>
+</html>
