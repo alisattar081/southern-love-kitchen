@@ -32,17 +32,17 @@
       <p>Fill out the form below and we'll get your order ready for pickup or delivery. For large or catering orders, please use the <a href="catering.html">Catering page</a>.</p>
       <form class="order-form" style="max-width: 540px; margin:2rem auto;">
         <label for="orderName">Name</label>
-        <input type="text" id="orderName" required>
+        <input type="text" id="orderName" name="name" required>
         <label for="orderPhone">Phone</label>
-        <input type="tel" id="orderPhone" required>
+        <input type="tel" id="orderPhone" name="phone" required>
         <label for="orderEmail">Email</label>
-        <input type="email" id="orderEmail" required>
+        <input type="email" id="orderEmail" name="email" required>
         <label for="orderItems">Order Details (items, quantities, sides, etc.)</label>
-        <textarea id="orderItems" rows="4" required></textarea>
+        <textarea id="orderItems" name="items" rows="4" required></textarea>
         <label for="orderDate">Pickup/Delivery Date</label>
-        <input type="date" id="orderDate" required>
+        <input type="date" id="orderDate" name="date" required>
         <label for="orderTime">Pickup/Delivery Time</label>
-        <input type="time" id="orderTime" required>
+        <input type="time" id="orderTime" name="time" required>
         <button type="submit" class="btn-primary">Submit Order</button>
       </form>
       <div style="text-align:center;margin-top:2rem;">
