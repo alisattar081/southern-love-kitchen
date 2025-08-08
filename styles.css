@@ -220,6 +220,50 @@ nav ul li a.active::after, nav ul li a:hover::after {
   resize: none;
   outline: none;
 }
+
+/* FAQ Styles */
+.faq-list {
+  margin-top: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1.7rem;
+  border-radius: 11px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  overflow: hidden;
+}
+
+.faq-item:nth-child(odd) {
+  background: #fff;
+}
+
+.faq-item:nth-child(even) {
+  background: #fff9de;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.2rem 1rem;
+  text-align: left;
+  font: inherit;
+  font-weight: 600;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 0 1rem 1rem 1rem;
+  color: #181818;
+}
+
+.faq-icon {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
 footer {
   background: #222;
   color: #fff;

@@ -37,28 +37,58 @@
       <h1>Frequently Asked Questions</h1>
       <div class="faq-list">
         <div class="faq-item">
-          <h3>What payment methods do you accept?</h3>
-          <p>We accept cash, credit/debit cards, Zelle, and Cash App. Online payments coming soon!</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+            <span class="faq-icon" role="img" aria-label="Payment">💳</span>
+            What payment methods do you accept?
+          </button>
+          <div id="faq1" class="faq-answer" hidden>
+            <p>We accept cash, credit/debit cards, Zelle, and Cash App. Online payments coming soon!</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3>Do you deliver?</h3>
-          <p>Yes, we offer local delivery in the Alexandria area. Delivery fees may apply depending on your location.</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+            <span class="faq-icon" role="img" aria-label="Delivery">🚚</span>
+            Do you deliver?
+          </button>
+          <div id="faq2" class="faq-answer" hidden>
+            <p>Yes, we offer local delivery in the Alexandria area. Delivery fees may apply depending on your location.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3>Are your dishes gluten-free or vegan?</h3>
-          <p>Many of our dishes can be made gluten-free or vegan. Check our menu for dietary labels or ask when you order!</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+            <span class="faq-icon" role="img" aria-label="Dietary options">🥗</span>
+            Are your dishes gluten-free or vegan?
+          </button>
+          <div id="faq3" class="faq-answer" hidden>
+            <p>Many of our dishes can be made gluten-free or vegan. Check our menu for dietary labels or ask when you order!</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3>How do I book catering?</h3>
-          <p>Use our <a href="catering.html">Catering & Events</a> page to send an inquiry, or call/email us to discuss your needs!</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+            <span class="faq-icon" role="img" aria-label="Catering">🎉</span>
+            How do I book catering?
+          </button>
+          <div id="faq4" class="faq-answer" hidden>
+            <p>Use our <a href="catering.html">Catering &amp; Events</a> page to send an inquiry, or call/email us to discuss your needs!</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3>Can I order for a large group?</h3>
-          <p>Absolutely! We love feeding a crowd. Please contact us for custom quotes for big orders or events.</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+            <span class="faq-icon" role="img" aria-label="Group orders">👥</span>
+            Can I order for a large group?
+          </button>
+          <div id="faq5" class="faq-answer" hidden>
+            <p>Absolutely! We love feeding a crowd. Please contact us for custom quotes for big orders or events.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3>Do you have gift cards?</h3>
-          <p>Gift cards will be available soon! Stay tuned for updates.</p>
+          <button class="faq-question" aria-expanded="false" aria-controls="faq6">
+            <span class="faq-icon" role="img" aria-label="Gift cards">🎁</span>
+            Do you have gift cards?
+          </button>
+          <div id="faq6" class="faq-answer" hidden>
+            <p>Gift cards will be available soon! Stay tuned for updates.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -75,17 +105,6 @@
     </div>
   </footer>
   <script src="scripts/auth.js"></script>
-  <style>
-    .faq-list { margin-top: 2rem; }
-    .faq-item {
-      margin-bottom: 1.7rem;
-      background: #fff;
-      padding: 1.2rem 1rem;
-      border-radius: 11px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-    .faq-item h3 { margin-bottom: 0.5rem; color: #ffd600;}
-    .faq-item p { color: #181818;}
-  </style>
+  <script src="scripts/faq.js"></script>
 </body>
 </html>
