@@ -392,6 +392,35 @@ footer {
   margin: 2rem auto 0 auto;
 }
 
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  background: #f6f6f6;
+  box-sizing: border-box;
+}
+
+.contact-form .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .reviews-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
