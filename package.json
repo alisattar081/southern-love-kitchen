@@ -1,0 +1,16 @@
+{
+  "name": "southern-love-kitchen",
+  "version": "1.0.0",
+  "description": "Southern Love Kitchen website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "nodemailer": "^6.9.4",
+    "node-cron": "^3.0.2"
+  }
+}
