@@ -1,0 +1,18 @@
+{
+  "name": "southern-love-kitchen",
+  "version": "1.0.0",
+  "description": "Modern restaurant & catering website for Southern Love Kitchen. Built with HTML and CSS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"No tests\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
