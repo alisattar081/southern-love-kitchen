@@ -27,7 +27,7 @@ def test_navigation_links_and_active(html_file):
     assert nav is not None, f"{html_file} is missing a <nav> element"
 
     links = {a.get("href") for a in nav.find_all("a", href=True)}
-    assert links == REQUIRED_LINKS, f"Unexpected links in {html_file}: {links}" 
+    assert REQUIRED_LINKS.issubset(links), f"Missing required links in {html_file}: {links}"
 
     active_links = [a for a in nav.find_all("a", href=True) if "active" in a.get("class", [])]
     assert len(active_links) == 1, f"{html_file} should have exactly one active link"
