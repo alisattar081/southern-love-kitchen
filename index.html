@@ -83,11 +83,16 @@
       <div class="order-form">
         <h2>Order Online</h2>
         <form>
-          <input type="text" placeholder="Name" required>
-          <input type="tel" placeholder="Phone" required>
-          <input type="date" placeholder="Date" required>
-          <input type="time" placeholder="Time" required>
-          <textarea placeholder="Order Details" required></textarea>
+          <label for="homeName" class="sr-only">Name</label>
+          <input type="text" id="homeName" name="name" placeholder="Name" autocomplete="name" required>
+          <label for="homePhone" class="sr-only">Phone</label>
+          <input type="tel" id="homePhone" name="phone" placeholder="Phone" autocomplete="tel" required>
+          <label for="homeDate" class="sr-only">Date</label>
+          <input type="date" id="homeDate" name="date" placeholder="Date" required>
+          <label for="homeTime" class="sr-only">Time</label>
+          <input type="time" id="homeTime" name="time" placeholder="Time" required>
+          <label for="homeDetails" class="sr-only">Order Details</label>
+          <textarea id="homeDetails" name="details" placeholder="Order Details" required></textarea>
           <button type="submit" class="btn-primary">Send</button>
         </form>
       </div>
