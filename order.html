@@ -36,21 +36,45 @@
     <section class="container">
       <h1>Order Online</h1>
       <p>Fill out the form below and we'll get your order ready for pickup or delivery. For large or catering orders, please use the <a href="catering.html">Catering page</a>.</p>
-      <form class="order-form" style="max-width: 540px; margin:2rem auto;">
-        <label for="orderName">Name</label>
-        <input type="text" id="orderName" name="name" required>
-        <label for="orderPhone">Phone</label>
-        <input type="tel" id="orderPhone" name="phone" required>
-        <label for="orderEmail">Email</label>
-        <input type="email" id="orderEmail" name="email" required>
-        <label for="orderItems">Order Details (items, quantities, sides, etc.)</label>
-        <textarea id="orderItems" name="items" rows="4" required></textarea>
-        <label for="orderDate">Pickup/Delivery Date</label>
-        <input type="date" id="orderDate" name="date" required>
-        <label for="orderTime">Pickup/Delivery Time</label>
-        <input type="time" id="orderTime" name="time" required>
-        <button type="submit" class="btn-primary">Submit Order</button>
-      </form>
+      <div class="order-layout" style="margin:2rem auto;max-width:900px;">
+        <aside class="steps-sidebar">
+          <ol>
+            <li>Contact Info</li>
+            <li>Select Items</li>
+            <li>Pickup/Delivery</li>
+            <li>Review &amp; Submit</li>
+          </ol>
+        </aside>
+        <form class="order-form" id="orderForm" style="max-width:540px;">
+          <div class="form-step">
+            <h2>1. Contact Info</h2>
+            <label for="orderName">Name</label>
+            <input type="text" id="orderName" name="name" required>
+            <label for="orderPhone">Phone</label>
+            <input type="tel" id="orderPhone" name="phone" required>
+            <label for="orderEmail">Email</label>
+            <input type="email" id="orderEmail" name="email" required>
+            <label><input type="checkbox" id="sendEmail" checked> Email confirmation</label>
+          </div>
+          <div class="form-step">
+            <h2>2. Select Items</h2>
+            <div id="menuItems"></div>
+          </div>
+          <div class="form-step">
+            <h2>3. Pickup/Delivery</h2>
+            <label for="orderDate">Date</label>
+            <input type="date" id="orderDate" name="date" required>
+            <label for="orderTime">Time</label>
+            <input type="time" id="orderTime" name="time" required>
+          </div>
+          <div class="form-step" id="reviewStep" style="display:none;">
+            <h2>4. Review &amp; Submit</h2>
+            <div id="orderSummary"></div>
+          </div>
+          <button type="submit" class="btn-primary" id="submitBtn">Review Order</button>
+          <div id="orderMessage"></div>
+        </form>
+      </div>
       <div style="text-align:center;margin-top:2rem;">
         <p>Prefer to order by phone or text?</p>
         <p><strong>Call or text: <a href="tel:5555555555">(555) 555-5555</a></strong></p>
@@ -69,5 +93,6 @@
     </div>
   </footer>
   <script src="scripts/auth.js"></script>
+  <script src="scripts/order.js"></script>
 </body>
 </html>
