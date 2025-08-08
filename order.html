@@ -36,20 +36,33 @@
     <section class="container">
       <h1>Order Online</h1>
       <p>Fill out the form below and we'll get your order ready for pickup or delivery. For large or catering orders, please use the <a href="catering.html">Catering page</a>.</p>
-      <form class="order-form form-centered max-w-540">
+      <form id="orderForm" class="order-form form-centered max-w-540">
         <label for="orderName">Name</label>
         <input type="text" id="orderName" name="name" required>
+        <span class="error" id="nameError"></span>
+
         <label for="orderPhone">Phone</label>
         <input type="tel" id="orderPhone" name="phone" required>
+        <span class="error" id="phoneError"></span>
+
         <label for="orderEmail">Email</label>
         <input type="email" id="orderEmail" name="email" required>
+        <span class="error" id="emailError"></span>
+
         <label for="orderItems">Order Details (items, quantities, sides, etc.)</label>
         <textarea id="orderItems" name="items" rows="4" required></textarea>
+        <span class="error" id="itemsError"></span>
+
         <label for="orderDate">Pickup/Delivery Date</label>
         <input type="date" id="orderDate" name="date" required>
+        <span class="error" id="dateError"></span>
+
         <label for="orderTime">Pickup/Delivery Time</label>
         <input type="time" id="orderTime" name="time" required>
+        <span class="error" id="timeError"></span>
+
         <button type="submit" class="btn-primary">Submit Order</button>
+        <p id="orderStatus" class="form-message"></p>
       </form>
       <div class="info-center">
         <p>Prefer to order by phone or text?</p>
@@ -69,5 +82,6 @@
     </div>
   </footer>
   <script src="scripts/auth.js"></script>
+  <script src="scripts/order.js"></script>
 </body>
 </html>
