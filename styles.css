@@ -192,6 +192,29 @@ nav ul li a.active::after, nav ul li a:hover::after {
 .menu.container {
   margin-bottom: 3.5rem;
 }
+
+/* Full menu page */
+.menu-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.7rem;
+  margin-top: 2rem;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 17px rgba(0,0,0,0.06);
+  padding: 1.5rem;
+}
+
+.menu-card h2 {
+  margin-top: 0;
+}
+
+.menu-card ul {
+  padding-left: 1.2rem;
+}
 .menu-grid {
   display: flex;
   gap: 1.7rem;
