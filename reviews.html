@@ -55,13 +55,22 @@
       </div>
       <div class="add-review-form">
         <h2>Share Your Experience!</h2>
-        <form>
-          <label for="reviewerName">Name</label>
-          <input type="text" id="reviewerName" name="name" placeholder="Your Name" required>
-          <label for="reviewText">Your Review</label>
-          <textarea id="reviewText" name="review" placeholder="Tell us what you loved!" required></textarea>
-          <button type="submit" class="btn-primary">Submit Review</button>
-        </form>
+          <form>
+            <label for="reviewerName">Name</label>
+            <input type="text" id="reviewerName" name="name" placeholder="Your Name" required>
+            <label for="reviewRating">Rating</label>
+            <div id="reviewRating" class="stars rating-input">
+              <svg data-value="1" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.487 6.91l6.563-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.545z"/></svg>
+              <svg data-value="2" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.487 6.91l6.563-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.545z"/></svg>
+              <svg data-value="3" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.487 6.91l6.563-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.545z"/></svg>
+              <svg data-value="4" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.487 6.91l6.563-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.545z"/></svg>
+              <svg data-value="5" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.487 6.91l6.563-.955L10 0l2.95 5.955 6.563.955-4.757 4.635 1.122 6.545z"/></svg>
+            </div>
+            <input type="hidden" id="rating" name="rating" required>
+            <label for="reviewText">Your Review</label>
+            <textarea id="reviewText" name="review" placeholder="Tell us what you loved!" required></textarea>
+            <button type="submit" class="btn-primary">Submit Review</button>
+          </form>
         <p><em>Thank you for supporting Southern Love Kitchen!</em></p>
       </div>
     </section>
@@ -99,7 +108,8 @@
     .review-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
     .review-photo { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 0.5rem; }
     .stars { display: flex; gap: 2px; }
-    .stars svg { width: 20px; height: 20px; fill: #ffd600; }
+    .stars svg { width: 20px; height: 20px; fill: #ccc; cursor: pointer; }
+    .stars svg.filled { fill: #ffd600; }
     .review span { display: block; color: #ffd600; margin-top: 1rem; font-weight: 600; font-size: 1rem; }
     .share-btn { margin-top: 1rem; background: var(--accent); color: var(--dark); border: none; padding: 0.35rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
     #charCount { text-align: right; font-size: 0.9rem; color: #666; margin-top: 0.25rem; }
