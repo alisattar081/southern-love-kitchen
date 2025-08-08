@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Southern Love Kitchen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo"><a href="index.html">Southern Love <span>Kitchen</span></a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label>Username:
+        <input type="text" name="username" required>
+      </label>
+      <label>Password:
+        <input type="password" name="password" required>
+      </label>
+      <button type="submit" class="btn-primary">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register</a></p>
+  </main>
+
+  <script src="scripts/auth.js"></script>
+</body>
+</html>
