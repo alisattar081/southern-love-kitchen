@@ -309,3 +309,60 @@ footer {
     gap: 1rem;
   }
 }
+
+/* Login Page Styles */
+.login-banner {
+  min-height: 60vh;
+  background: url('B70EE393-E18C-4EDE-9938-BFCB280F814E.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  background: rgba(255,255,255,0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.login-form .error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}

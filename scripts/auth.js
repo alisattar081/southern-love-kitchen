@@ -3,8 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const logoutLink = document.getElementById('logoutLink');
   const profileLink = document.getElementById('profileLink');
 
+  function getToken() {
+    return localStorage.getItem('token') || sessionStorage.getItem('token');
+  }
+
+  function clearToken() {
+    localStorage.removeItem('token');
+    sessionStorage.removeItem('token');
+  }
+
   function updateNav() {
-    const token = localStorage.getItem('token');
+    const token = getToken();
     if (token) {
       if (loginLink) loginLink.style.display = 'none';
       if (logoutLink) logoutLink.style.display = 'list-item';
@@ -19,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (logoutLink) {
     logoutLink.addEventListener('click', (e) => {
       e.preventDefault();
-      localStorage.removeItem('token');
+      clearToken();
       updateNav();
     });
   }
