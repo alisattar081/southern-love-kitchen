@@ -56,14 +56,18 @@
       </div>
       <div class="contact-form">
         <h2>Send a Message</h2>
-        <form>
+        <form id="contactForm" novalidate>
           <label for="contactName">Name</label>
           <input type="text" id="contactName" name="name" required>
+          <span class="error" id="nameError"></span>
           <label for="contactEmail">Email</label>
           <input type="email" id="contactEmail" name="email" required>
+          <span class="error" id="emailError"></span>
           <label for="contactMessage">Message</label>
           <textarea id="contactMessage" name="message" rows="4" required></textarea>
+          <span class="error" id="messageError"></span>
           <button type="submit" class="btn-primary">Send</button>
+          <div id="contactStatus" class="form-message"></div>
         </form>
       </div>
       <div class="map-embed">
@@ -85,5 +89,6 @@
     </div>
   </footer>
   <script src="scripts/auth.js"></script>
+  <script src="scripts/contact.js"></script>
 </body>
 </html>
