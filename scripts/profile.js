@@ -5,12 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('profileForm');
 
   fetch('/users/me')
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) throw new Error('Failed to fetch profile');
+      return res.json();
+    })
     .then((data) => {
       nameInput.value = data.name || '';
       contactInput.value = data.contact || '';
       channelSelect.value = data.notificationChannel || 'email';
-    });
+    })
+    .catch((err) => alert('Update failed'));
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -27,9 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       body: JSON.stringify(payload),
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error('Failed to update profile');
+        return res.json();
+      })
       .then((data) => {
         alert('Profile updated');
-      });
+      })
+      .catch((err) => alert('Update failed'));
   });
 });
