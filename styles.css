@@ -421,6 +421,13 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.order-form .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .reviews-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
