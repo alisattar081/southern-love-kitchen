@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         sessionStorage.setItem('token', token);
       }
-      window.location.href = 'profile.html';
+      window.location.href = '/profile';
     } else {
       errorMsg.textContent = 'Invalid email or password.';
     }

@@ -7,30 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <div class="logo"><a href="index.html">Southern Love <span>Kitchen</span></a></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order Online</a></li>
-          <li><a href="catering.html">Catering</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="reviews.html" class="active">Reviews</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li id="profileLink"><a href="profile.html">Profile</a></li>
-          <li id="loginLink"><a href="login.html">Login</a></li>
-          <li id="logoutLink"><a href="#">Logout</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <%- include('partials/header', { active: 'reviews' }) %>
 
   <main>
     <section class="reviews-page container">
@@ -76,18 +56,9 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-container">
-      <p>&copy; 2025 Southern Love Kitchen. All rights reserved.</p>
-      <div class="footer-social">
-        <a href="#">Instagram</a> |
-        <a href="#">Facebook</a> |
-        <a href="#">TikTok</a>
-      </div>
-    </div>
-  </footer>
-  <script src="scripts/auth.js"></script>
-  <script src="scripts/reviews.js"></script>
+  <%- include('partials/footer') %>
+  <script src="/scripts/auth.js"></script>
+  <script src="/scripts/reviews.js"></script>
   <style>
     .reviews-list {
       display: grid;

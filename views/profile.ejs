@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile | Southern Love Kitchen</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('partials/header', { active: 'profile' }) %>
+
+  <main>
+    <section class="hero profile-hero">
+      <div class="hero-overlay">
+        <h1>Your Profile</h1>
+      </div>
+    </section>
+    <section class="profile container">
+      <div class="profile-card">
+        <div class="avatar-placeholder"></div>
+        <div id="spinner" class="spinner"></div>
+        <form id="profileForm" class="profile-form" style="display:none;">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+
+          <label for="contact">Contact Info</label>
+          <input type="text" id="contact" />
+
+          <label for="notificationChannel">Preferred Notification Channel</label>
+          <select id="notificationChannel">
+            <option value="email">Email</option>
+            <option value="sms">SMS</option>
+            <option value="phone">Phone</option>
+          </select>
+          <button type="submit" class="btn-primary">Save</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+  <script src="/scripts/auth.js"></script>
+  <script src="/scripts/profile.js"></script>
+</body>
+</html>
