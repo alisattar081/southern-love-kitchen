@@ -30,23 +30,32 @@
   </header>
 
   <main>
+    <section class="hero profile-hero">
+      <div class="hero-overlay">
+        <h1>Your Profile</h1>
+      </div>
+    </section>
     <section class="profile container">
-      <h1>Your Profile</h1>
-      <form id="profileForm" class="profile-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" />
+      <div class="profile-card">
+        <div class="avatar-placeholder"></div>
+        <div id="spinner" class="spinner"></div>
+        <form id="profileForm" class="profile-form" style="display:none;">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
 
-        <label for="contact">Contact Info</label>
-        <input type="text" id="contact" />
+          <label for="contact">Contact Info</label>
+          <input type="text" id="contact" />
 
-        <label for="notificationChannel">Preferred Notification Channel</label>
-        <select id="notificationChannel">
-          <option value="email">Email</option>
-          <option value="sms">SMS</option>
-          <option value="phone">Phone</option>
-        </select>
-        <button type="submit" class="btn-primary">Save</button>
-      </form>
+          <label for="notificationChannel">Preferred Notification Channel</label>
+          <select id="notificationChannel">
+            <option value="email">Email</option>
+            <option value="sms">SMS</option>
+            <option value="phone">Phone</option>
+          </select>
+          <button type="submit" class="btn-primary">Save</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
     </section>
   </main>
 
