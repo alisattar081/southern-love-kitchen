@@ -1,0 +1,26 @@
+/* Root variables for easy theming */
+:root {
+  --accent: #FFD600;
+  --accent-secondary: #e5c100;
+  --accent-tertiary: #b38f00;
+  --dark: #222;
+  --dark-secondary: #333;
+  --dark-tertiary: #000;
+  --light-bg: #fdf8f0;
+  --light-bg-secondary: #fff;
+  --light-bg-tertiary: #f8f7f4;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', 'Arial', sans-serif;
+  margin: 0;
+  background: var(--light-bg);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
