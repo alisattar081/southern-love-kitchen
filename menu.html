@@ -33,53 +33,192 @@
   </header>
 
   <main>
-    <section class="container">
+    <div class="menu-intro container">
       <h1>Our Soulful Menu</h1>
       <p>Made fresh. Made with love. Made for you.</p>
+      <div class="menu-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="starters">Starters</button>
+        <button class="filter-btn" data-category="mains">Mains</button>
+        <button class="filter-btn" data-category="sides">Sides</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+      </div>
+    </div>
 
-      <!-- Starters -->
-      <h2>Starters & Appetizers</h2>
-      <ul>
-        <li><strong>Cheeseburger Eggroll</strong> — Multi-cheese crunchy beef eggroll, fried perfectly, served with chipotle aioli.</li>
-        <li><strong>Hot Cheeto Chicken Balls</strong> — Chicken and cheese rolled with peppers, coated & dipped in batter, fried to perfection.</li>
-        <li><strong>Quesadillas</strong> — Grilled with three cheeses and peppers. Ooey, gooey, and unforgettable.</li>
-        <li><strong>Meatballs</strong> — Juicy baked meatballs with a Southern twist.</li>
-      </ul>
+    <section class="menu-section" data-category="starters">
+      <div class="container">
+        <h2>Starters & Appetizers</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Cheeseburger Eggroll">
+            <h3 class="dish-name">Cheeseburger Eggroll</h3>
+            <p class="dish-desc">Multi-cheese crunchy beef eggroll, fried perfectly, served with chipotle aioli.</p>
+            <span class="dish-price">$8.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Hot Cheeto Chicken Balls">
+            <h3 class="dish-name">Hot Cheeto Chicken Balls</h3>
+            <p class="dish-desc">Chicken and cheese rolled with peppers, coated & dipped in batter, fried to perfection.</p>
+            <span class="dish-price">$7.50</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Quesadillas">
+            <h3 class="dish-name">Quesadillas</h3>
+            <p class="dish-desc">Grilled with three cheeses and peppers. Ooey, gooey, and unforgettable.</p>
+            <span class="dish-price">$6.50</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Meatballs">
+            <h3 class="dish-name">Meatballs</h3>
+            <p class="dish-desc">Juicy baked meatballs with a Southern twist.</p>
+            <span class="dish-price">$5.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Mains -->
-      <h2>Main Courses</h2>
-      <ul>
-        <li><strong>Fried Chicken</strong> — Buttermilk fried golden chicken, crispy on the outside, juicy on the inside.</li>
-        <li><strong>Fried Fish</strong> — Fresh whiting fish dipped in our Cajun fish fry batter and fried to perfection.</li>
-        <li><strong>Fried Jumbo Shrimp</strong> — Jumbo shrimp perfectly fried, also available in buffalo.</li>
-        <li><strong>Jerk Rasta Pasta</strong> — Creamy, spicy pasta packed with island flavor. Choose chicken, shrimp, or steak.</li>
-        <li><strong>Baked Smothered Turkey Wings</strong> — Slow-cooked turkey wings with delicious country gravy (or jerk sauce on request).</li>
-        <li><strong>Lamb Chop</strong> — Grass-fed lamb, seasoned and seared with red wine.</li>
-      </ul>
+    <section class="menu-section" data-category="mains">
+      <div class="container">
+        <h2>Main Courses</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Fried Chicken">
+            <h3 class="dish-name">Fried Chicken</h3>
+            <p class="dish-desc">Buttermilk fried golden chicken, crispy on the outside, juicy on the inside.</p>
+            <span class="dish-price">$12.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Fried Fish">
+            <h3 class="dish-name">Fried Fish</h3>
+            <p class="dish-desc">Fresh whiting fish dipped in our Cajun fish fry batter and fried to perfection.</p>
+            <span class="dish-price">$11.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Fried Jumbo Shrimp">
+            <h3 class="dish-name">Fried Jumbo Shrimp</h3>
+            <p class="dish-desc">Jumbo shrimp perfectly fried, also available in buffalo.</p>
+            <span class="dish-price">$13.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Jerk Rasta Pasta">
+            <h3 class="dish-name">Jerk Rasta Pasta</h3>
+            <p class="dish-desc">Creamy, spicy pasta packed with island flavor. Choose chicken, shrimp, or steak.</p>
+            <span class="dish-price">$14.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Baked Smothered Turkey Wings">
+            <h3 class="dish-name">Baked Smothered Turkey Wings</h3>
+            <p class="dish-desc">Slow-cooked turkey wings with delicious country gravy or jerk sauce on request.</p>
+            <span class="dish-price">$15.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Lamb Chop">
+            <h3 class="dish-name">Lamb Chop</h3>
+            <p class="dish-desc">Grass-fed lamb, seasoned and seared with red wine.</p>
+            <span class="dish-price">$18.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Sides -->
-      <h2>Sides</h2>
-      <ul>
-        <li><strong>Baked Beans</strong> — Savory beans, slow-cooked with ground beef & spices for a bold kick!</li>
-        <li><strong>Mac & Cheese</strong> — Heavenly cheesy macaroni with a golden crust.</li>
-        <li><strong>Green Beans</strong> — Fresh-snapped, slow-cooked in smoked turkey.</li>
-        <li><strong>Mash Potatoes</strong> — Creamy garlic mashed potatoes made with Irish butter.</li>
-        <li><strong>Broccoli</strong> — Fresh, sautéed with salt, pepper, garlic, and butter.</li>
-        <li><strong>Loaded Baked Potatoes</strong> — Jumbo baked potato with salt, pepper, sour cream, cheese, bacon bites & green onion (add steak if you like).</li>
-        <li><strong>Asparagus</strong> — Sautéed in garlic lemon herb butter.</li>
-        <li><strong>Collard Greens</strong> — Southern-style collard & kale greens, slow-cooked with smoked turkey.</li>
-        <li><strong>Yellow Rice</strong> — Cooked down with red peppers for big flavor.</li>
-        <li><strong>Cabbage</strong> — Southern cabbage, slow-cooked with smoked turkey.</li>
-        <li><strong>Rolls</strong> — Fresh-baked and perfect for sopping up every last drop.</li>
-      </ul>
+    <section class="menu-section" data-category="sides">
+      <div class="container">
+        <h2>Sides</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Baked Beans">
+            <h3 class="dish-name">Baked Beans</h3>
+            <p class="dish-desc">Savory beans, slow-cooked with ground beef & spices for a bold kick!</p>
+            <span class="dish-price">$4.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Mac & Cheese">
+            <h3 class="dish-name">Mac &amp; Cheese</h3>
+            <p class="dish-desc">Heavenly cheesy macaroni with a golden crust.</p>
+            <span class="dish-price">$4.50</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Green Beans">
+            <h3 class="dish-name">Green Beans</h3>
+            <p class="dish-desc">Fresh-snapped, slow-cooked in smoked turkey.</p>
+            <span class="dish-price">$3.50</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Mash Potatoes">
+            <h3 class="dish-name">Mash Potatoes</h3>
+            <p class="dish-desc">Creamy garlic mashed potatoes made with Irish butter.</p>
+            <span class="dish-price">$3.50</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Broccoli">
+            <h3 class="dish-name">Broccoli</h3>
+            <p class="dish-desc">Fresh, sautéed with salt, pepper, garlic, and butter.</p>
+            <span class="dish-price">$3.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Loaded Baked Potatoes">
+            <h3 class="dish-name">Loaded Baked Potatoes</h3>
+            <p class="dish-desc">Jumbo baked potato with salt, pepper, sour cream, cheese, bacon bites & green onion (add steak if you like).</p>
+            <span class="dish-price">$6.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Asparagus">
+            <h3 class="dish-name">Asparagus</h3>
+            <p class="dish-desc">Sautéed in garlic lemon herb butter.</p>
+            <span class="dish-price">$4.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Collard Greens">
+            <h3 class="dish-name">Collard Greens</h3>
+            <p class="dish-desc">Southern-style collard & kale greens, slow-cooked with smoked turkey.</p>
+            <span class="dish-price">$4.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Yellow Rice">
+            <h3 class="dish-name">Yellow Rice</h3>
+            <p class="dish-desc">Cooked down with red peppers for big flavor.</p>
+            <span class="dish-price">$3.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Cabbage">
+            <h3 class="dish-name">Cabbage</h3>
+            <p class="dish-desc">Southern cabbage, slow-cooked with smoked turkey.</p>
+            <span class="dish-price">$3.50</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Rolls">
+            <h3 class="dish-name">Rolls</h3>
+            <p class="dish-desc">Fresh-baked and perfect for sopping up every last drop.</p>
+            <span class="dish-price">$2.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Desserts -->
-      <h2>Desserts</h2>
-      <ul>
-        <li><strong>Honey Strawberry Cornbread</strong> — Homemade cornbread with fresh strawberries and sweet glazed top.</li>
-        <li><strong>Strawberry Shortcake</strong> — Homemade vanilla and strawberry cake with light sweet icing and wafer topper.</li>
-        <li><strong>Lemon Blueberry Cupcakes</strong> — Homemade cupcakes with lemon, blueberry, and a vanilla drizzle.</li>
-      </ul>
+    <section class="menu-section" data-category="desserts">
+      <div class="container">
+        <h2>Desserts</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Honey Strawberry Cornbread">
+            <h3 class="dish-name">Honey Strawberry Cornbread</h3>
+            <p class="dish-desc">Homemade cornbread with fresh strawberries and sweet glazed top.</p>
+            <span class="dish-price">$5.00</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Strawberry Shortcake">
+            <h3 class="dish-name">Strawberry Shortcake</h3>
+            <p class="dish-desc">Homemade vanilla and strawberry cake with light sweet icing and wafer topper.</p>
+            <span class="dish-price">$5.50</span>
+          </div>
+          <div class="menu-card">
+            <img src="https://via.placeholder.com/150" alt="Lemon Blueberry Cupcakes">
+            <h3 class="dish-name">Lemon Blueberry Cupcakes</h3>
+            <p class="dish-desc">Homemade cupcakes with lemon, blueberry, and a vanilla drizzle.</p>
+            <span class="dish-price">$4.50</span>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -94,5 +233,6 @@
     </div>
   </footer>
   <script src="scripts/auth.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>
