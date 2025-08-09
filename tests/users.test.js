@@ -1,5 +1,6 @@
-const { test, beforeEach, afterEach } = require('node:test');
-const assert = require('node:assert');
+/**
+ * @jest-environment node
+ */
 const express = require('express');
 
 let server;
@@ -23,24 +24,24 @@ test('accepts valid notification channel', async () => {
   const res = await fetch(`${base}/users/me`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ notificationChannel: 'sms' }),
+    body: JSON.stringify({ notificationChannel: 'sms' })
   });
-  assert.strictEqual(res.status, 200);
+  expect(res.status).toBe(200);
   const body = await res.json();
-  assert.strictEqual(body.notificationChannel, 'sms');
+  expect(body.notificationChannel).toBe('sms');
 });
 
 test('rejects invalid notification channel', async () => {
   const res = await fetch(`${base}/users/me`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ notificationChannel: 'pigeon' }),
+    body: JSON.stringify({ notificationChannel: 'pigeon' })
   });
-  assert.strictEqual(res.status, 400);
+  expect(res.status).toBe(400);
   const body = await res.json();
-  assert.deepStrictEqual(body, { error: 'Invalid channel' });
+  expect(body).toEqual({ error: 'Invalid channel' });
 
   const getRes = await fetch(`${base}/users/me`);
   const getBody = await getRes.json();
-  assert.strictEqual(getBody.notificationChannel, 'email');
+  expect(getBody.notificationChannel).toBe('email');
 });
