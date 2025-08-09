@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Online | Southern Love Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+  <header>
+  <div class="container header-container">
+    <div class="logo"><a href="index.html">Southern Love <span>Kitchen</span></a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order Online</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li id="profileLink"><a href="profile.html">Profile</a></li>
+        <li id="loginLink"><a href="login.html">Login</a></li>
+        <li id="logoutLink"><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <section class="container">
+      <h1>Order Online</h1>
+      <p>Fill out the form below and we'll get your order ready for pickup or delivery. For large or catering orders, please use the <a href="catering.html">Catering page</a>.</p>
+      <form id="orderForm" class="order-form form-centered max-w-540">
+        <label for="orderName">Name</label>
+        <input type="text" id="orderName" name="name" required>
+        <span class="error" id="nameError"></span>
+
+        <label for="orderPhone">Phone</label>
+        <input type="tel" id="orderPhone" name="phone" required>
+        <span class="error" id="phoneError"></span>
+
+        <label for="orderEmail">Email</label>
+        <input type="email" id="orderEmail" name="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label for="orderItems">Order Details (items, quantities, sides, etc.)</label>
+        <textarea id="orderItems" name="items" rows="4" required></textarea>
+        <span class="error" id="itemsError"></span>
+
+        <label for="orderDate">Pickup/Delivery Date</label>
+        <input type="date" id="orderDate" name="date" required>
+        <span class="error" id="dateError"></span>
+
+        <label for="orderTime">Pickup/Delivery Time</label>
+        <input type="time" id="orderTime" name="time" required>
+        <span class="error" id="timeError"></span>
+
+        <button type="submit" class="btn-primary">Submit Order</button>
+        <p id="orderStatus" class="form-message"></p>
+      </form>
+      <div class="info-center">
+        <p>Prefer to order by phone or text?</p>
+        <p><strong>Call or text: <a href="tel:5555555555">(555) 555-5555</a></strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="container footer-container">
+    <p>&copy; 2025 Southern Love Kitchen. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/order.js"></script>
+</body>
+</html>

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server/index.js",
     "test": "node --test tests/*.test.js",
+    "build": "node scripts/build-views.js",
     "build:css": "sass styles/main.scss dist/styles.css"
   },
   "keywords": [],

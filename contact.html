@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Southern Love Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+  <header>
+  <div class="container header-container">
+    <div class="logo"><a href="index.html">Southern Love <span>Kitchen</span></a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order Online</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li id="profileLink"><a href="profile.html">Profile</a></li>
+        <li id="loginLink"><a href="login.html">Login</a></li>
+        <li id="logoutLink"><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+    <section class="contact-page container">
+      <h1>Contact Us</h1>
+      <p>Have a question? Want to order by phone or chat about your event? Reach out!</p>
+      <div class="contact-info-grid">
+        <div>
+          <h3>Phone</h3>
+          <p><a href="tel:5555555555">(555) 555-5555</a></p>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:info@southernlovekitchen.com">info@southernlovekitchen.com</a></p>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <p>123 Southern Ave, Alexandria, VA 22306</p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Open 24/7 for online orders!<br>Pickup by appointment.</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form id="contactForm" novalidate>
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="name" required>
+          <span class="error" id="nameError"></span>
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" name="email" required>
+          <span class="error" id="emailError"></span>
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" rows="4" required></textarea>
+          <span class="error" id="messageError"></span>
+          <button type="submit" class="btn-primary">Send</button>
+          <div id="contactStatus" class="form-message"></div>
+        </form>
+      </div>
+      <div class="map-embed">
+        <h3>Find Us</h3>
+        <!-- Replace the src below with your actual location if available -->
+        <iframe src="https://maps.google.com/maps?q=Alexandria,VA,22306&z=15&output=embed" width="100%" height="220" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="container footer-container">
+    <p>&copy; 2025 Southern Love Kitchen. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>
